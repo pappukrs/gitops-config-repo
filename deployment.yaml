@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs-gitops-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nodejs-gitops-app
+  template:
+    metadata:
+      labels:
+        app: nodejs-gitops-app
+    spec:
+      containers:
+      - name: nodejs-gitops-app
+        image: pappukrs/nodejs-gitops-app:latest
+        ports:
+        - containerPort: 3000
