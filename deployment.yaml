@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: nodejs-gitops-app
-        image: pappukrs/nodejs-gitops-app:1761282772
+        image: pappukrs/nodejs-gitops-app:1761284041
         ports:
         - containerPort: 3000
